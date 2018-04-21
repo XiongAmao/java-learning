@@ -31,18 +31,24 @@ public class Main {
         myArray.add(5);
         myArray.add(8);
         myArray.add(4);
+        myArray.add(6);
         myArray.add(9);
         myArray.add(2);
         myArray.add(7);
+        System.out.println("Now, array length = " + myArray.length());
 
         assert(myArray.max() == 9);
 
         myArray.add(10);
         assert(myArray.max() == 10);
+        System.out.println("Now, array length = " + myArray.length());
 
         myArray.sort();
+
         int[] output = myArray.output();
-        for (int i = 1; i <= 10; i++) {
+
+        for (int i = 1; i < 10; i++) {
+            System.out.println("output = " + output[i]);
             assert(output[i] == (i + 1));
         }
     }

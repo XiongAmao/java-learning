@@ -25,7 +25,7 @@ public class Main {
         // 注：在java中定义一个整数数组的语法: int[] array = new int[20];
         // java便利一个数组的语法：for (int i = 0; i < array.size(); i++) System.out.print(array[i])
 
-        MyArray myArray = new MyArray();
+        MyArray myArray = new MyArray(20);
         myArray.add(3);
         myArray.add(1);
         myArray.add(5);
